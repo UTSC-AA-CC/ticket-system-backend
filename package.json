@@ -1,0 +1,27 @@
+{
+  "name": "ticket-system-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UTSC-AA-CC/ticket-system-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UTSC-AA-CC/ticket-system-backend/issues"
+  },
+  "homepage": "https://github.com/UTSC-AA-CC/ticket-system-backend#readme",
+  "dependencies": {
+    "@types/node": "^14.11.10",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.5",
+    "typescript": "^4.0.3"
+  }
+}
