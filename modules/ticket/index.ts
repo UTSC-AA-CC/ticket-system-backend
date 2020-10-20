@@ -1,5 +1,28 @@
 import { createModule, gql } from 'graphql-modules';
 
+const tickets = [
+    {
+        title: "Title",
+        description: "Description",
+        ticketNumber: 423,
+        status: 'open',
+        createdBy: "12nfaj12",
+        assignedTo: "12nfaj12",
+        priority: "low",
+        categories: [],
+    },
+    {
+        title: "Title",
+        description: "Description",
+        ticketNumber: 424,
+        status: 'open',
+        createdBy: "12nfaj12",
+        assignedTo: "12nfaj12",
+        priority: "low",
+        categories: [],
+    }
+]
+
 export const ticketModule = createModule({
     id: 'ticket',
     dirname: __dirname,
@@ -14,6 +37,14 @@ export const ticketModule = createModule({
             priority: String
             categories: [String]
         }
+
+        type Query {
+            tickets: [Ticket]
+        }
     `,
-    resolvers: {},
+    resolvers: {
+        Query: {
+            tickets: () => tickets,
+        },
+    },
 });
